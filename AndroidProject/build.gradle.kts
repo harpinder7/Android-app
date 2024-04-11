@@ -7,4 +7,10 @@ plugins {
 
 buildscript{repositories{
     mavenCentral()
-}}
+    google()
+}
+    dependencies {
+        // other dependencies
+        classpath ("com.google.gms:google-services:4.4.1")
+    }
+}

@@ -5,15 +5,15 @@ plugins {
 }
 
 android {
-    namespace = "com.example.AndroidProject"
+    namespace = "com.test.AndroidProject"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.AndroidProject"
+        applicationId = "com.test.artgalleryapp"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.1"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -48,6 +48,11 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.7")
     implementation ("com.google.android.gms:play-services-auth:21.0.0")
+    implementation("com.google.firebase:firebase-database:20.3.1")
+    implementation ("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation ("androidx.navigation:navigation-ui-ktx:2.7.7")
+    implementation ("com.google.android.material:material:1.11.0")
+
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

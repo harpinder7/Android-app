@@ -7,11 +7,21 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="artwork_artist_placeholder">Artist</string>
+    <string name="artwork_description_placeholder">Artist</string>
+    <string name="artwork_title_placeholder">Artist</string>
 
-    <string name="facebook_app_id">291166210083255</string>
-    <string name="fb_login_protocol_scheme">fb291166210083255</string>
-    <string name="facebook_client_token">d033501f95b9e879270f10405a4e7961</string>
-    <string name="default_web_client_id">1039160964738-9d3c7p6fvavkf569sg6m0eg5jkk3714d.apps.googleusercontent.com</string>
+        <string name="ArtGallery">ArtGallery</string>
+        <string name="name">John Doe</string>
+        <string name="birthday">Birthday: January 1, 1990</string>
+        <string name="phone_number">Phone Number: +1234567890</string>
+        <string name="email">Email: john@example.com</string>
+        <string name="password">Password: ****</string>
+
+    <string name="facebook_app_id">803784084492230</string>
+    <string name="fb_login_protocol_scheme">fb803784084492230</string>
+    <string name="facebook_client_token">c1ae5988653c491433be084f0ad8f998</string>
+    <string name="default_web_client_id">693220992076-rhourstembbidlhrung4eifmgio1duaf.apps.googleusercontent.com</string>
 
     ``````````````````````````````````````````````````````````````````````````````````````
 

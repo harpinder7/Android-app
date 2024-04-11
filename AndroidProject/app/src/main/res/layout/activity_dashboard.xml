@@ -1,4 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -20,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            android:queryHint="Search..."/>
+            android:queryHint="Search..." />
 
         <Button
             android:id="@+id/buttonViewArtworks"
@@ -36,158 +38,262 @@
             android:text="Upcoming Exhibitions"
             android:layout_marginTop="8dp"/>
 
-        <!-- First row with two artworks -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
+            android:orientation="vertical">
 
+                <!-- First row with three artworks -->
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginEnd="8dp">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
 
-                        <ImageView
-                            android:id="@+id/imageViewArtwork1"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/art1"
-                            android:contentDescription="Artwork Image"/>
-
-                        <!-- Text views for artwork details -->
-                        <TextView
-                            android:id="@+id/textViewArtworkTitle1"
-                            android:layout_width="match_parent"
+                        <!-- Artwork 1 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="8dp"
-                            android:text="Artwork 1 Name"/>
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/textViewArtworkArtist1"
-                            android:layout_width="match_parent"
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork1"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/starry_night" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Oil Painting"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!-- Artwork 2 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:textStyle="italic"
-                            android:layout_marginTop="4dp"
-                            android:text="Artist 1 Name"/>
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork2"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/the_thinker" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Sculpture"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!-- Artwork 3 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork3"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/migrant_mother" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Photography"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
                 </LinearLayout>
 
+                <!-- Second row with three artworks -->
                 <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
 
-                        <ImageView
-                            android:id="@+id/imageViewArtwork2"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/art2"
-                            android:contentDescription="Artwork Image"/>
-
-                        <!-- Text views for artwork details -->
-                        <TextView
-                            android:id="@+id/textViewArtworkTitle2"
-                            android:layout_width="match_parent"
+                        <!-- Artwork 4 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="8dp"
-                            android:text="Artwork 2 Name"/>
+                            android:layout_weight="1"
+                            android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/textViewArtworkArtist2"
-                            android:layout_width="match_parent"
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork4"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/composition_viii" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Abstract"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!-- Artwork 5 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:textStyle="italic"
-                            android:layout_marginTop="4dp"
-                            android:text="Artist 2 Name"/>
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork5"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/water_lilies" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Impressionsim"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!-- Artwork 6 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork6"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/the_weather_project" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle6"
+                                    android:layout_width="202dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Installation-Art"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Third row with two artworks -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp">
+
+                        <!-- Artwork 7 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork7"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/yellow_and_blue" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Minimalism"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <!-- Artwork 8 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/imageViewArtwork8"
+                                    android:layout_width="130dp"
+                                    android:layout_height="120dp"
+                                    android:layout_margin="8dp"
+                                    android:contentDescription="Artwork Image"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/ballon_girl" />
+
+                                <TextView
+                                    android:id="@+id/textViewArtworkTitle8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="8dp"
+                                    android:text="Street Art"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+
                 </LinearLayout>
         </LinearLayout>
 
-        <!-- Second row with two artworks -->
-        <LinearLayout
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginEnd="8dp">
-
-                        <ImageView
-                            android:id="@+id/imageViewArtwork3"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/art3"
-                            android:contentDescription="Artwork Image"/>
-
-                        <!-- Text views for artwork details -->
-                        <TextView
-                            android:id="@+id/textViewArtworkTitle3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="8dp"
-                            android:text="Artwork 3 Name"/>
-
-                        <TextView
-                            android:id="@+id/textViewArtworkArtist3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:textStyle="italic"
-                            android:layout_marginTop="4dp"
-                            android:text="Artist 3 Name"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                        <ImageView
-                            android:id="@+id/imageViewArtwork4"
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/art4"
-                            android:contentDescription="Artwork Image"/>
-
-                        <!-- Text views for artwork details -->
-                        <TextView
-                            android:id="@+id/textViewArtworkTitle4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="8dp"
-                            android:text="Artwork 4 Name"/>
-
-                        <TextView
-                            android:id="@+id/textViewArtworkArtist4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="14sp"
-                            android:textStyle="italic"
-                            android:layout_marginTop="4dp"
-                            android:text="Artist 4 Name"/>
-                </LinearLayout>
-        </LinearLayout>
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            app:menu="@menu/bottom_navigation_menu" />
 
 </LinearLayout>
+
