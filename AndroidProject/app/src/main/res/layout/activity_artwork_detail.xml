@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_background">
+
+    <!-- Image View for Artwork -->
+
+    <!-- TextView for Painting Name -->
+
+    <ImageView
+        android:id="@+id/imageViewArtwork"
+        android:layout_width="337dp"
+        android:layout_height="376dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/the_weather_project" />
+
+    <TextView
+        android:id="@+id/textViewPaintingName"
+        android:layout_width="624dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/imageViewArtwork"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="Painting Name : The Weather Project"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- TextView for Artist Name -->
+    <TextView
+        android:id="@+id/textViewArtistName"
+        android:layout_width="601dp"
+        android:layout_height="53dp"
+        android:layout_below="@id/textViewPaintingName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:text="Painting Name : John Mark"
+        android:textSize="26sp" />
+
+    <!-- TextView for Category -->
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="606dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewArtistName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Category: John Mark"
+
+        android:textSize="26sp" />
+
+    <!-- TextView for Description -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="626dp"
+        android:layout_height="820dp"
+        android:layout_below="@id/textViewCategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Description : In Ephemeral Skies, the artist's brush dances across the canvas, conjuring a breathtaking tableau of celestial drama. The scene unfolds against a backdrop of azure heavens, where wisps of ethereal clouds drift like delicate lace, illuminated by the gentle glow of a rising sun. The horizon blurs with the promise of a new day, suffusing the landscape with a golden hue that bathes everything it touches in a warm embrace.
+
+    Amidst this celestial ballet, nature's forces are at play. A solitary tree stands sentinel against the ever-changing sky, its branches reaching skyward as if in silent reverence to the cosmic spectacle above. The air is alive with anticipation, carrying whispers of the wind and the faint scent of rain on the horizon.
+
+    In the distance, storm clouds gather, their ominous presence a stark contrast to the tranquility below. Electric flashes of lightning illuminate the darkened sky, casting jagged shadows across the landscape and heralding the arrival of a tempestuous tempest.
+
+    Yet, even amidst the tumult of nature's fury, there is beauty to be found. Raindrops cascade from the heavens, painting the world in shimmering hues of silver and gray. Each droplet is a tiny prism, refracting the light and scattering it like diamonds upon the earth.
+
+    Ephemeral Skiescaptures the fleeting beauty of the natural world, reminding us of the ever-changing tapestry of life and the sublime majesty of the weather's ever-shifting canvas"
+        android:textSize="26sp" />
+    <!-- Bottom Navigation -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/bottom_navigation_menu" />
+
+</RelativeLayout>
