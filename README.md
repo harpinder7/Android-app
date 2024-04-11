@@ -7,4 +7,12 @@ Concepts :
 3.	Image Handling: Understand how to handle and display high-quality images of artwork within the application.
 4.	User Profile management: Implement features that allow users to create and manage their profiles, save favorite artworks, and track their engagement with the app.
 5.	Responsive design: Ensure that the app is responsive and adaptable to various screen sizes and resolutions, providing a consistent experience across different Android devices.
-6.	Deploying application.
+
+
+
+// Updates for the Assignment3 
+
+Enhanced the overall layout the application .
+Added a details pages using firebase database of each art picture.
+Created a user profile page that displays the information of the user.
+Added Navigation bar at the bottom 
